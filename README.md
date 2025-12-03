@@ -18,7 +18,7 @@ The tool handles threading properly, follows directory redirects intelligently (
 
 ```bash
 git clone https://github.com/ShieldedDev/Duster.git
-cd duster
+cd Duster
 chmod +x duster.sh
 ```
 
