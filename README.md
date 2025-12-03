@@ -1,7 +1,7 @@
 
-# 🚀 Buster – A Fast Bash-Based Directory Brute-Forcer
+# 🚀 Duster – A Fast Bash-Based Directory Brute-Forcer
 
-Buster is a lightweight, fast, and fully-bash directory brute-forcing tool written for CTFs, pentesting labs, and bug bounty recon.
+Duster is a lightweight, fast, and fully-bash directory brute-forcing tool written for CTFs, pentesting labs, and bug bounty recon.
 It uses curl, background job parallelization, and a simple worker model to uncover hidden directories on web servers.
 
 This tool exists for people who want a simple, portable, dependency-minimal brute-forcer that runs almost anywhere Linux does — without installing Go, Python libraries, or massive scanners.
@@ -14,7 +14,7 @@ During many CTFs and web-app pentests, I repeatedly found myself needing:
    - A script I can modify, extend, or integrate into recon pipelines
    - A tool that is easy to read, easy to hack on, and fast enough to matter
 
-Buster fills that gap:
+Duster fills that gap:
 A transparent, open, easily customizable brute-forcer written in pure Bash.
 
 ## 💡 Key Features
@@ -42,9 +42,9 @@ Perfect for CTFs, bug bounty automation, quick recon, or scripting exercises in 
 
 ### Clone the repository:
 
-    git clone https://github.com/<your-username>/buster.git
-    cd buster
-    chmod +x buster.sh
+    git clone https://github.com/ShieldedDev/Duster
+    cd Duster
+    chmod +x duster.sh
 
 
 ### Install curl (if not already installed):
@@ -54,7 +54,7 @@ Perfect for CTFs, bug bounty automation, quick recon, or scripting exercises in 
     sudo dnf install curl     # Fedora
 
 ## 🎯 Usage
-    ./buster.sh -u <URL> -w <WORDLIST>
+    ./duster.sh -u <URL> -w <WORDLIST>
 
 ### Options
     Flag	Description
@@ -63,7 +63,7 @@ Perfect for CTFs, bug bounty automation, quick recon, or scripting exercises in 
     -h	    Help menu
 
 ### Example
-    ./buster.sh -u https://example.com -w /usr/share/wordlists/dirb/common.txt
+    ./duster.sh -u https://example.com -w /usr/share/wordlists/dirb/common.txt
 
 ### Sample Output
 
@@ -74,7 +74,7 @@ Perfect for CTFs, bug bounty automation, quick recon, or scripting exercises in 
 
 ## 🛠️ How It Works
 
-- Buster uses a simple but effective internal flow:
+- Duster uses a simple but effective internal flow:
 - Reads each line of the wordlist
 - Spawns a worker() in the background
 - Limits running workers by thread count
@@ -83,7 +83,7 @@ Perfect for CTFs, bug bounty automation, quick recon, or scripting exercises in 
 - Saves output into timestamped files under a target-named directory
 - This makes the tool fast, portable, and easy to modify.
 
-## 🔥 When to Use Buster
+## 🔥 When to Use Duster
  ✔️ CTFs / Wargames
  - Fast enumeration of challenge servers.
 ✔️ Bug Bounty Recon
@@ -103,7 +103,7 @@ Perfect for CTFs, bug bounty automation, quick recon, or scripting exercises in 
     - Bash
     - curl
     - Minimal permissions
-    - Buster still works.
+    - Duster still works.
 
 ✔️ Bash Learning
 
