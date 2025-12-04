@@ -3,7 +3,7 @@
 A lightweight directory enumeration tool written in pure Bash. Built for CTF players, penetration testers, and anyone who needs a simple, hackable directory brute-forcer that just works.
 
 ## Blog Explaination of this script - 
-[InfoSecPath]([https://example.com](https://infosecpath.blogspot.com/2025/12/buster-fast-bash-based-directory-brute.html))
+[InfoSecPath](https://infosecpath.blogspot.com/2025/12/buster-fast-bash-based-directory-brute.html)
 
 
 ## Why Another Directory Scanner?
